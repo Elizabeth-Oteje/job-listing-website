@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @import './css/main.css';
+@import './css/app.css';
+@import './css/header.css';
+@import './css/jobs.css';
+@import './css/job.css' */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+
+
+:root{
+--primary-color: hsl(180, 29%, 50%);
+--background-color: hsl(180, 52%, 96%)
+--filter-table: hsl(180, 31%, 95%)
+--dark-greyish: hsl(180, 8%, 52%)
+--very-dark-greyish: hsl(180, 14%, 20%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
+
+html{
+  font-size: 15px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: var(--background-color);
+}
+
+.header{
+    width: 100%;
+    height: 10rem;
+    background-image: url(./components/images/bg-header-desktop.svg);
+    background-color: var(--primary-color);
+    
+ }
